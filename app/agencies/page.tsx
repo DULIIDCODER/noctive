@@ -18,29 +18,45 @@ export default function Agencies() {
           trained professionals.
         </p>
 
-        <form
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "20px",
-            width: "100%",
-            maxWidth: "600px",
-          }}
-        >
+         <form
+           action="https://formspree.io/f/xeewwbgd"
+           method="POST"
+           style={{
+           display: "flex",
+           flexDirection: "column",
+           gap: "20px",
+           width: "100%",
+           maxWidth: "600px",
+
+           }}
+         >
+
           <input
+            name="fullName"
             placeholder="Full Name"
+            required
           />
 
           <input
+            name="agencyName"
             placeholder="Agency Name"
+            required
           />
 
 
           <input
+            name="email"
+            type="email"
             placeholder="Email Address"
+            required
           />
 
-          <select defaultValue="">
+          <input
+            name="telegram"
+            placeholder="Telegram Username"
+          />
+
+          <select name="monthlyRevenue" defaultValue="">
             <option value="" disabled>
               Monthly Revenue
             </option>
@@ -51,7 +67,7 @@ export default function Agencies() {
             <option>$100,001+</option>
           </select>
 
-          <select defaultValue="">
+          <select name="modelsManaged" defaultValue="">
             <option value="" disabled>
               Number of Models Managed
             </option>
@@ -62,7 +78,7 @@ export default function Agencies() {
             <option>100+</option>
           </select>
 
-          <select defaultValue="">
+          <select name="currentTeamSize" defaultValue="">
             <option value="" disabled>
               Current team size
             </option>
@@ -75,11 +91,15 @@ export default function Agencies() {
 
 
           <textarea
+            name="biggestBottleneck"
             placeholder="Biggest Bottle Neck in Your Business"
           />
 
           <textarea
+            name="businessDetails"
             placeholder="Tell us about your business"
+            rows={6}
+            required
           />
 
           <button>

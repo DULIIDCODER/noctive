@@ -19,27 +19,45 @@ export default function Chatters() {
         </p>
 
         <form
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "20px",
-            width: "100%",
-            maxWidth: "600px",
-          }}
-        >
+         action="https://formspree.io/f/xgobbjoj"
+         method="POST"
+         style={{
+         display: "flex",
+         flexDirection: "column",
+         gap: "20px",
+         width: "100%",
+         maxWidth: "600px",
+  }}
+>
           <input
+          name="fullName"
             placeholder="Full Name"
+            required
           />
 
-          <input
+          <input 
+            type="email"
+            name="email"
             placeholder="Email Address"
+            required
           />
 
-          <input
+            <input 
+            name="telegram"
+            placeholder="Telegram Username"
+            required
+          />
+
+           <input
+            name="age"
             placeholder="Age"
+            type="number"
+            min={18}
+            max={99}
+            required
           />
 
-           <select defaultValue="">
+           <select name="country" defaultValue="" required>
             <option value="" disabled>
               Country of Residence
             </option>
@@ -53,9 +71,10 @@ export default function Chatters() {
             <option>Nigeria</option>
             <option>Other</option>
             {/* Add more countries as needed */}
+            required
            </select>
 
-           <select defaultValue="">
+           <select name="homeOffice" defaultValue="" required>
             <option value="" disabled>
               Do you have a home office setup? (Yes/No)
             </option>
@@ -64,10 +83,15 @@ export default function Chatters() {
            </select>
 
            <input
+            name="typingSpeed"
             placeholder="Typing Speed (WPM)"
+            type="number"
+            min={30}
+            max={200}
+            required
           />
 
-           <select defaultValue="">
+           <select name="chatExperience" defaultValue="">
              <option value="" disabled>
                Chat Moderation Experience
              </option>
@@ -79,14 +103,18 @@ export default function Chatters() {
             </select>
 
            <input
+            name="languages"
             placeholder="Languages Spoken"
+            required
           />
           
            <input
+            name="availability"
             placeholder="Availability (Hours per Week)"
+            required
           />
 
-         <select defaultValue="">
+         <select name="preferredShift" defaultValue="">
             <option value="" disabled>
               Preferred Shift
             </option>
@@ -94,19 +122,25 @@ export default function Chatters() {
             <option>Afternoon (12pm - 6pm)</option>
             <option>Evening (6pm - 12am)</option>
             <option>Night (12am - 6am)</option>
+            <option>Flexible</option>
+            required
           </select>
 
-          <select defaultValue="">
+          <select name="salesExperience" defaultValue="">
             <option value="" disabled>
               Sales Experience
             </option>
             <option>Beginner</option>
             <option>Intermediate</option>
             <option>Advanced</option>
+            required
           </select>
 
           <textarea
+            name="whyHireYou"
             placeholder="Why we should hire you"
+            rows={6}
+            required
           />
 
           <button>

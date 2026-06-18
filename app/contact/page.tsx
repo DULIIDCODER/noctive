@@ -55,6 +55,8 @@ export default function Contact() {
         </div>
 
         <form
+          action="https://formspree.io/f/mykaaqjl"
+          method="POST"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -63,13 +65,41 @@ export default function Contact() {
             margin: "0 auto",
           }}
         >
-          <input placeholder="Full Name" />
-          <input placeholder="Email Address" />
-          <input placeholder="Company / Agency Name" />
+          <input 
+          name="Full Name"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="Email Address"
+            placeholder="Email Address"
+            required
+          />
+
+            <input
+            name="Phone Number"
+            placeholder="Phone Number"
+            required
+          />
+
+          <input
+          name="telegram"
+            placeholder="Telegram Username"
+          />
+
+
+          <input
+            name="Company / Agency Name"
+            placeholder="Company / Agency Name"
+            required
+          />
 
           <textarea
+            name="Tell us about your project"
             placeholder="Tell us about your project"
             rows={6}
+            required
           />
 
           <button>
