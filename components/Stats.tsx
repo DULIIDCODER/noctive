@@ -19,16 +19,8 @@ export default function Stats() {
         Results That Matter
       </h2>
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns:
-            "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "25px",
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
-      >
+      <div className="stats-grid">
+      
         <div className="stat-card">
           <h3>
            $

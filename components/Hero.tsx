@@ -11,15 +11,17 @@ export default function Hero() {
       style={{
         textAlign: "center",
         maxWidth: "1100px",
+        width: "100%",
         padding: "0 20px",
-      }}
-    >
+        boxSizing: "border-box",
+  }}
+>
       <h1
         style={{
           fontSize: "clamp(3rem, 8vw, 5rem)",
           fontWeight: "bold",
           marginBottom: "20px",
-          lineHeight: "1",
+          lineHeight: "1.1",
         }}
       >
         Turn Conversations 
@@ -30,7 +32,7 @@ export default function Hero() {
       <p
   style={{
     color: "#a1a1aa",
-    fontSize: "1.5rem",
+    fontSize: "clamp(1.2rem,4vw,1.5rem)",
     marginBottom: "30px",
     lineHeight: "1.6",
     maxWidth: "800px",
@@ -60,6 +62,7 @@ export default function Hero() {
           gap: "20px",
           justifyContent: "center",
           flexWrap: "wrap",
+          alignItems: "center",
         }}
       >
 <Link
@@ -68,8 +71,11 @@ export default function Hero() {
     background: "#7c3aed",
     color: "white",
     textDecoration: "none",
-    padding: "16px 32px",
+    padding: "16px 28px",
     borderRadius: "50px",
+    width:"100%",
+    maxWidth:"300px",
+    textAlign:"center"
   }}
 >
   Book Discovery Call
@@ -82,7 +88,10 @@ export default function Hero() {
     color: "white",
     textDecoration: "none",
     border: "1px solid #444",
-    padding: "16px 32px",
+    padding: "16px 28px",
+    width:"100%",
+    maxWidth:"300px",
+    textAlign:"center",
     borderRadius: "50px",
   }}
 >

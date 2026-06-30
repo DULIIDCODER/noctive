@@ -335,3 +335,45 @@ option {
       translateX(0px);
   }
 }
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .stat-card {
+    padding: 24px; 
+  }
+
+  .stat-card h3 {
+    font-size: 2.2rem;
+  }
+
+  .stat-card p {
+    font-size: 1.2rem;
+  }
+}
+
+.stats-grid {
+  display: grid;
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/*Tablet */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Mobile */
+@media (max-width: 640px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
