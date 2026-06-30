@@ -11,7 +11,7 @@ export default function Agencies() {
       padding: "120px 20px",
     }}
   >
-        <h1>Hire Noctive Chatters</h1>
+        <h1>Partner with Noctive</h1>
 
         <p>
           Scale your business with

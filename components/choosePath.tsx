@@ -13,7 +13,7 @@ export default function ChoosePath() {
       >
         <h2
           style={{
-            fontSize: "3rem",
+            fontSize: "clamp(2rem, 5vw, 3rem)",
             textAlign: "center",
             marginBottom: "60px",
           }}
@@ -25,7 +25,7 @@ export default function ChoosePath() {
           style={{
             display: "grid",
             gridTemplateColumns:
-              "repeat(auto-fit, minmax(400px, 1fr))",
+              "repeat(auto-fit, minmax(280px, 1fr))",
             gap: "30px",
           }}
         >
@@ -40,7 +40,7 @@ export default function ChoosePath() {
               className="stat-card"
               style={{
                 cursor: "pointer",
-                height: "100%",
+                padding: "20px",
               }}
             >
               <h3>Join Noctive</h3>
@@ -72,10 +72,10 @@ export default function ChoosePath() {
               className="stat-card"
               style={{
                 cursor: "pointer",
-                height: "100%",
+                padding: "20px",
               }}
             >
-              <h3>Hire Noctive Chatters</h3>
+              <h3>Partner With Noctive</h3>
 
               <p>
                 Scale your creator business with trained
